@@ -1,0 +1,162 @@
+:root {
+  --light-orange: #f69770;
+  --dark-orange: #f36933;
+  --color-2: #0f5257;
+  --color-bg: #500125;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg);
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--light-orange);
+  align-items: center;
+  min-height: 40px;
+  padding-left: 25px;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 20px;
+}
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+.cart-num {
+  background-color: var(--color-bg);
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 5px;
+}
+
+.all-items {
+  display: flex;
+  justify-content: center;
+  width: 1500px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.card {
+  background-color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  border-radius: 10px;
+  min-width: 270px;
+  text-align: center;
+  margin: 30px;
+}
+
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: 15px;
+  width: 75%;
+  height: 290px;
+}
+
+.card-body {
+  margin: 15px;
+}
+
+.card-title {
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--dark-orange);
+}
+
+.card-brand {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-2);
+}
+
+.card-text {
+  margin: 10px 0;
+}
+
+.card-price {
+  font-weight: 700;
+  color: var(--color-2);
+}
+
+.card-count {
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.cart-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+  border-width: 0px;
+  cursor: pointer;
+}
+
+.card-btn {
+  margin-top: 20px;
+  font-weight: 700;
+  color: black;
+  background-color: var(--light-orange);
+}
+
+.card-btn-cart {
+  padding: 10px 30px;
+}
+
+.sortbtn {
+  background-color: var(--color-2);
+  color: white;
+  padding: 15px;
+  border-radius: 3px;
+  border-width: 0px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.caption {
+  text-transform: uppercase;
+  margin: 20px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+.empty-cart {
+  color: var(--light-orange);
+}
