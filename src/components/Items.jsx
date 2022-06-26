@@ -31,8 +31,8 @@ const Items = ({ items, addItem, cartNum }) => {
             <>
               {items
                 .sort((a, b) =>
-                  parseInt(a.price.split(" ")[0]) <
-                  parseInt(b.price.split(" ")[0])
+                  parseFloat(a.price.split(" ")[0]) <
+                  parseFloat(b.price.split(" ")[0])
                     ? 1
                     : -1
                 )
@@ -44,8 +44,8 @@ const Items = ({ items, addItem, cartNum }) => {
             <>
               {items
                 .sort((a, b) =>
-                  parseInt(a.price.split(" ")[0]) <
-                  parseInt(b.price.split(" ")[0])
+                  parseFloat(a.price.split(" ")[0]) <
+                  parseFloat(b.price.split(" ")[0])
                     ? -1
                     : 1
                 )
